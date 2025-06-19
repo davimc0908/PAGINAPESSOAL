@@ -1,5 +1,9 @@
+/* Estilo geral */
 body {
     background-color: rgb(4, 224, 151);
+    font-family: 'Courier New', Courier, monospace;
+    margin: 0;
+    padding: 0;
 }
 
 h1, h2 {
@@ -9,17 +13,51 @@ h1, h2 {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
-p, div {
+p {
     text-align: center;
-    font-family: 'Courier New', Courier, monospace;
     color: white;
+    margin: 10px;
 }
 
+/* Box model aplicado ao bloco "Sobre mim" */
+.sobre-box {
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 2px solid white;
+    border-radius: 15px;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.3);
+    padding: 20px;
+    margin: 30px auto;
+    width: 80%;
+    max-width: 600px;
+    color: white;
+    text-align: center;
+}
+
+/* Imagem redonda */
 img {
-    border-radius: 50%;
+    display: block;
+    margin: 0 auto;
+    border-radius: 40%
 }
 
+/* Estilo para links */
 a {
-    color: white;
+    color: rgb(1, 70, 17);
     text-decoration: none;
+    font-weight: bold;
 }
+
+/* Pseudoclasses */
+a:hover {
+    color: yellow;
+    text-decoration: underline;
+}
+
+a:active {
+    color: orange;
+}
+
+a:visited {
+    color: lightgray;
+}
+
