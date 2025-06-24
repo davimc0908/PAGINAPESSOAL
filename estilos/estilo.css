@@ -49,15 +49,15 @@ a {
 
 /* Pseudoclasses */
 a:hover {
-    color: yellow;
+    color: rgba(2, 88, 52, 0.055);
     text-decoration: underline;
 }
 
 a:active {
-    color: orange;
+    color: rgb(255, 255, 255);
 }
 
 a:visited {
-    color: lightgray;
+    color: ligtgray;
 }
 
