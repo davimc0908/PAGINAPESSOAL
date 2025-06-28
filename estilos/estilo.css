@@ -41,24 +41,25 @@ img {
 }
 
 /* Estilo para links */
-.link-tutorial:visited{
-    color: rgb(1, 70, 17);
+a{
+    color: rgb(0, 3, 1);
     text-decoration: none;
     font-weight: bold;
+    display: block;
+    font-size: 1.3em;
+    font-weight: bold;
+    margin-top: 40px;
     text-align: center;
+    margin: 40px auto;
 }
 
 /* Pseudoclasses */
 a:hover {
-    color: yellow;
+    color: rgb(9, 70, 12);
     text-decoration: underline;
 }
 
-a:active {
-    color: orange;
-}
-
 a:visited {
-    color: lightgray;
+    color: ligtgray;
 }
 
