@@ -1,6 +1,6 @@
 /* Estilo geral */
 body {
-    background-image: url('Imagem/Ifes_Logo.svg.png'); /* coloque o nome exato do seu arquivo ou o caminho */
+    background-image: url('../Imagem/more-leaves-on-green.png'); /* coloque o nome exato do seu arquivo ou o caminho */
     background-attachment: fixed;
   background-position: top right;
   background-repeat: no-repeat;
