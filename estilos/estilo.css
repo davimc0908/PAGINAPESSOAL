@@ -1,78 +1,126 @@
 /* Estilo geral */
 body {
-    background-image: url('../Imagem/Ifes_Logo.svg.png'); /* coloque o nome exato do seu arquivo ou o caminho */
-    background-attachment: fixed;
-  background-position: top right;
-  background-repeat: no-repeat;
-  background-size: 100px; /* opcional, ajusta o tamanho da imagem */
-    background-color: rgb(4, 224, 151);
-    font-family: 'Courier New', Courier, monospace;
     margin: 0;
     padding: 0;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #f5f5dc;
+}
+.img{
+    align-items: center;
 }
 
- h2 {
-    background-color: aliceblue;
-    color: black;
-    text-align: center;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
-h1{
-    color: black;
-    text-align: center;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-
-}
-
-p {
-    text-align: center;
-    color: black;
-    margin: 10px;
-    font-weight: bold;
-}
-
-/* Box model aplicado ao bloco "Sobre mim" */
-.sobre-box {
-    background-color: rgba(255, 255, 255, 0.1);
-    border: 2px solid white;
-    border-radius: 15px;
-    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.3);
-    padding: 20px;
-    margin: 30px auto;
-    width: 80%;
-    max-width: 600px;
+/* Header */
+header {
+    background-color: black;
     color: white;
-    text-align: center;
-    background-image: url('../Imagem/more-leaves-on-green.png');
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 30px;
+    flex-wrap: wrap;
 }
 
-/* Imagem redonda */
-img {
-    display: block;
-    margin: 0 auto;
-    border-radius: 40%
+header h1 {
+    font-family: cursive;
+    font-size: 20px;
 }
 
-/* Estilo para links */
-a{
-    color: rgb(0, 3, 1);
+.top-nav a {
+    color: white;
     text-decoration: none;
+    margin: 0 15px;
     font-weight: bold;
-    display: block;
-    font-size: 1.3em;
-    font-weight: bold;
-    margin-top: 40px;
-    text-align: center;
-    margin: 40px auto;
 }
 
-/* Pseudoclasses */
-a:hover {
-    color: rgb(9, 70, 12);
+.top-nav a:hover {
     text-decoration: underline;
 }
 
-a:visited {
-    color: ligtgray;
+.logo {
+    height: 50px;
 }
 
+/* Layout principal */
+.container {
+    display: flex;
+    min-height: 90vh;
+}
+
+.centralizada {
+    display: block;
+    margin: 100px auto;
+}
+
+
+/* Aside */
+aside {
+    width: 200px;
+    background-image: url("../Imagem/moroccan-flower.png");
+    padding: 20px;
+    border: 5px solid #000000;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.side-nav {
+    display: flex;
+    flex-direction: column;
+    gap: 200px;
+    align-items: center;
+}
+
+.side-nav .btn {
+    display: block;
+    width: 80%;
+    padding: 12px;
+    background-image: url("../Imagem/moroccan-flower-dark.png");
+    color: rgb(1, 77, 6);
+    text-align: center;
+    font-weight: bold;
+    border-radius: 10px;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    box-shadow: 2px 2px 8px rgba(0,0,0,0.2);
+    font-family: "Courier New", monospace;
+}
+
+.side-nav .btn:hover {
+    transform: scale(1.05);
+    background-color: #104e8b;
+}
+
+
+/* Main */
+main {
+    flex: 1;
+    padding: 30px;
+}
+
+.avatar {
+    display: block;
+    margin: 0 auto;
+    border-radius: 50%;
+    height: 200px;
+    width: 200px;
+}
+
+h2 {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.sobre-box {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 5px solid goldenrod;
+    background-image: url('../Imagem/more-leaves-on-green.png');
+    padding: 20px;
+    margin: 30px auto;
+    max-width: 700px;
+    text-align: center;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+}

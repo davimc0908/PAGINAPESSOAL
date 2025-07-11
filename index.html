@@ -3,50 +3,58 @@
 <head>
     <meta charset="UTF-8">
     <meta name="author" content="Davi Machado Calcago">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="estilos/estilo.css">
     <link rel="icon" href="Imagem/ifesserra.jpg" type="image/png">
     <title>Página pessoal</title>
 </head>
 <body>
+    <header>
+        <h1>Davi Machado Calcagno</h1>
+        <nav class="top-nav">
+            <a href="#inicio">Início</a>
+            <a href="#instituicao">minha instituição</a>
+            <a href="#contato">Contato</a>
+        </nav>
+        <img src="Imagem/logoSerra.png" alt="Logo IFES" class="logo">
+    </header>
 
-    <h1>Davi Machado Calcagno</h1>
+    <div class="container">
+        <aside>
+            <nav class="side-nav">
+                <a href="Tutorial/tutorial.html" class="btn">Tutorial</a>
+                <a href="https://serra.ifes.edu.br/" class="btn" target="_blank">Ifes</a>
+                <a href="curriculo/curriculo.html" class="btn">Curriculo</a>
+            </nav>
+        </aside>
 
-    <div>
-        <img src="Imagem/AvatarMaker.png" alt="Imagem avatar" title="Avatar do Davi" height="200px" width="200px">
+        <main>
+            <section id="inicio">
+                <img src="Imagem/AvatarMaker.png" alt="Avatar do Davi" title="Avatar do Davi" class="avatar">
+                <h2>Sobre mim</h2>
+                <div class="sobre-box">
+                    <p>Pretendo fazer ciências da computação na faculdade.</p>
+                </div>
+            </section>
+
+            <section id="descricao">
+                <h2>Meus interesses</h2>
+                <div class="sobre-box">
+                    <p>Sou cristão, gosto de acompanhar os jogos de futebol, andar a cavalo e de estudar sobre empreendedorismo.</p>
+                </div>
+            </section>
+
+            <section id="instituicao">
+                <h2>Minha instituição</h2>
+                <a href="https://serra.ifes.edu.br/" target="_blank">
+                    <img src="Imagem/ifesserra.jpg" width="300" height="200" alt="imagem do Campus Serra"  width="300" height="200" class="centralizada">
+                </a>
+            </section>
+        </main>
     </div>
 
-    
-    <h2>Sobre mim</h2>
-    <div class="sobre-box">
-        <p>Pretendo fazer ciências da computação na faculdade.</p>
-
-    </div>
-
-    <h2>Meus interesses</h2>
-    <div class="sobre-box">
-        <p>Sou cristão, gosto de acompanhar os jogos de futebol, andar a cavalo e de estudar sobre empreendedorismo.</p>
-    </div>
-    
-
-    <h2>Minha instituição</h2>
-    <a href="https://serra.ifes.edu.br/" target="_blank">
-        <div>
-            <img src="Imagem/ifesserra.jpg" width="300" height="200" alt="imagem do Campus Serra"   href="https://serra.ifes.edu.br/" target="_blank">
-                
-        </div>
-    </a>
-
-    <br><br>
-
-    <div>
-        <a class="link" href="Tutorial/tutorial.html">Abrir Página Tutorial</a>
-    </div>
-    <div>
-        <a href="curriculo/curriculo.html">Meu curriculo</a>
-    </div>
-
+    <footer id="contato">
+        <p>&copy; 2025 Davi Machado Calcagno Todos os direitos reservados - orientação: prof. Jonathan Toczek</p>
+    </footer>
 </body>
 </html>
-
-
-
